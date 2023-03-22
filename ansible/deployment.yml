@@ -14,10 +14,10 @@
     - name: installing webserver
       yum: name=httpd state=present
     - name: restart web server
-      service: name= httpd state=restarted
+      service: name=httpd state=restarted
     - name: getting code
       git:
-        repo:
+        repo: "https://github.com/Sivaprasad-Software/web-devlopent-code.git"
         dest: "/var/www/html/"
         version: "frontend"
 ...
