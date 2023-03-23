@@ -33,8 +33,8 @@ and then install ansible in our server
         in execute shell write this 
         [ sleep 10s
           cd terraform
-          terraform validate
           terraform init
+          terraform validate
           terraform plan
           terraform $action --auto-approve
           sleep 20s
